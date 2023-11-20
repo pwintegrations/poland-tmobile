@@ -1,0 +1,146 @@
+<!doctype html>
+<html class="no-js" lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Poland Orange</title>
+    <link rel="apple-touch-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/other.css" media="screen,print">
+
+</head>
+<header tabindex="0">
+    <div class="container container-sm">
+        <div class="row">
+            <div class="logo-wrapper col-6">
+                <a href="/">
+                    <img src="img/century-logo-white.webp" width="90" height="33" class="header-logo" alt="Century Logo" />
+                </a>
+            </div>
+            <div class="mob-menu col-6">
+                <button class="player-popup" aria-label="Check Login ID" ><i></i></button>
+                <a id="menu-toggle" class="menu-toggle">
+                    <span class="menu-toggle-bar menu-toggle-bar--top"></span>
+                    <span class="menu-toggle-bar menu-toggle-bar--middle"></span>
+                    <span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
+                </a>
+            </div>
+            <nav class="mob-menu-block">
+                <div class="mob-menu-blur"></div>
+                <ul>
+                    <li>
+                        <a href="">system nagród</a>
+                    </li>
+                    <li>
+                        <a href="">o century</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<body class="austria-drei">
+
+<main class="inner-page">
+    <div class="container container-sm">
+        <div class="row">
+            <div class="navigation-link-wrapper col-12">
+                <a class="navigation-link" href="javascript:history.back()">
+                    <span class="backward-link"><i class="backward-icon"></i></span>
+                    <span class="backward-text">Kontakt</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <section class="contact-page">
+        <div class="container container-sm">
+            <div class="row justify-content-center">
+                <div class="contact-body col-lg-8 col-md-10 col-12">
+                    <div class="contact-greeting text-block col-12"><p>Jesteśmy tu dla Ciebie! Jak możemy pomóc?</p></div>
+
+                    <div class="input-wrapper col-12">
+                        <input type="email" id="inputEmail" name="contact_us[sender]" required="required" class="form-control usual-input" aria-describedby="validationTooltipEmail" placeholder="Wprowadź adres e-mail: przyklad@gmail.com" />
+                    </div>
+                    <div class="input-wrapper col-12 ">
+                        <input type="text" id="inputPhone" name="contact_us[phone]" class="form-control usual-input" aria-describedby="validationTooltipPhone" placeholder="Proszę podać swój numer telefonu." />
+                    </div>
+                    <div class="select-wrapper col-12">
+                        <div class="select-dropdown ">
+                            <input id="contact_us_subject" type="text" class="pseudo-select select-name" title="Select" placeholder="Wybierz problem" readonly="" aria-describedby="validationTooltipIssue">
+                            <input type="hidden" class="pseudo-select select-code" name="contact_us[subject]">
+                            <div class="select-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#CACACA">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 8.29289C5.68342 7.90237 6.31658 7.90237 6.70711 8.29289L12 13.5858L17.2929 8.29289C17.6834 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31658 18.7071 9.70711L12.7071 15.7071C12.3166 16.0976 11.6834 16.0976 11.2929 15.7071L5.29289 9.70711C4.90237 9.31658 4.90237 8.68342 5.29289 8.29289Z"></path>
+                                </svg>
+                            </div>
+                            <ul class="select-options">
+                                <li class="option" data-id="loadingIssue" id="loadingIssue">Problemy z zawieszaniem się / awariami / ładowaniem</li>
+                                <li class="option" data-id="feedbackIssue" id="feedbackIssue">Pytania/opinia</li>
+                                <li class="option" data-id="subscribeIssue" id="subscribeIssue">Problemy z subskrypcją / anulowaniem subskrypcji</li>
+                                <li class="option" data-id="downloadIssue" id="downloadIssue">Problemy z pobieraniem lub instalacją</li>
+                                <li class="option" data-id="otherIssue" id="otherIssue">Inny</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="input-wrapper col-12 ">
+                        <textarea id="textareaMessage" name="contact_us[body]" required="required" class="form-control usual-textarea" rows="12" placeholder="Opisz swój problem tutaj"></textarea>
+
+                    </div>
+
+                    <div class="attach-wrapper col-12">
+                        <div class="attach-title no-paddings col-12">Załącznik</div>
+                        <div class="attach-row no-paddings col-12">
+                            <label class="form-label col-lg-4 col-6 no-paddings">
+                                Wybierz pliki
+                            </label>
+                            <div class="attached-name col-6">Nie wybrano pliku</div>
+                        </div>
+                    </div>
+                    <div class="btn-wrapper col-12">
+                        <button aria-label="Send Form" type="submit" id="send-form-buttton" class="sub-button join-button btn-usual"><span>Prześlij</span></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<footer class="landing-footer inner-footer">
+    <div class="container container-sm">
+        <div class="row">
+            <div id="button-up" class="button-to-top">
+                <i></i>
+            </div>
+            <nav class="footer-menu navbar col-sm-12">
+                <ul>
+                    <li>
+                        <a href="/poland-orange/faq">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="/poland-orange/contact_us">Kontakt</a>
+                    </li>
+                    <li>
+                        <a href="/poland-orange/terms">Zasady i warunki</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer-copyright col-sm-12">
+                <small>©Next Move Digital 2023 Wszystkie prawa zastrzeżone</small>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+<script type="text/javascript" src="js/general.js"></script>
+</html>

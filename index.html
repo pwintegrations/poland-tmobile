@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="no-js" lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Poland Orange Landing</title>
+    <link rel="apple-touch-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen,print">
+
+</head>
+<body class="dark-landing">
+<main>
+    <style>
+        .landing-page-basic .element-wrapper {
+            z-index: 1;
+        }
+
+        .landing-page-basic .background-element-wrapper {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            z-index: 0;
+        }
+    </style>
+    <div class="landing-page-container "
+         style="display: grid;
+             grid-template-columns: repeat(9, 11.11111111vw);
+             grid-template-rows: repeat(16, 6.25vh);
+             background-color: #000;
+             color: #ffffff">
+        <div class="element-wrapper" style="grid-area:1 / 1 / 8 / 10;z-index:0">
+            <div class="background bottom poland-orange-banner" ></div>
+        </div>
+        <div class="element-wrapper" style="grid-area:8 / 1 / 9 / 10;z-index:1">
+            <div class="poland-orange additional-text">
+                Co miesiąc będziesz otrzymywać 30.000 <span>klejnotów do</span>
+            </div>
+        </div>
+        <div class="element-wrapper" style="grid-area:9 / 1 / 10 / 10 ;z-index:1">
+            <div class="poland-orange-button-wrapper">
+                <form action="https://pwintegrations.github.io/poland-orange/otp.html" method="get">
+                    <button
+                            type="submit"
+                            id="main-subscribe-button"
+                            class="main-subscribe-button"
+                    >
+                        Subskrybuj
+                    </button>
+                    <a
+                            href="century-mobile.com/austria_payment"
+                            class="DCBProtection"
+                            style="display: none"
+                    ></a>
+                </form>
+            </div>
+        </div>
+        <div class="element-wrapper" style="grid-area:10 / 1 / 11 / 10;z-index:1">
+            <div class="poland-orange additional-text sub-btn-text">
+                <span>Cena subskrypcji 14,99 PLN</span>
+                <span>(VAT incl.)/7 dni</span>
+            </div>
+        </div>
+        <div class="element-wrapper" style="grid-area:11 / 1 / 12 / 10;z-index:1">
+            <a onclick="termsFunction()" class="poland-orange show-more-link"><i></i><span id="showBtnText">Przeczytaj więcej</span><i></i></a>
+
+            <script type="text/javascript">
+                function termsFunction () {
+                    const showBtn = document.querySelector("#showBtnText");
+                    const showBtnWrapper = document.querySelector(".show-more-link");
+                    const termsAdd = document.querySelector('.terms-additional');
+                    const footer = document.querySelector('.poland-orange-footer');
+
+                    if (showBtnWrapper.classList.contains('active')) {
+                        showBtnWrapper.classList.remove('active');
+                        showBtn.innerHTML = "Przeczytaj mniej";
+                        termsAdd.classList.remove('active');
+                        termsAdd.parentElement.style.cssText += 'grid-area: 12 / 1 / 15 / 10;';
+                        footer.parentElement.style.cssText += 'grid-area: 15/1/17/10;';
+                    } else {
+                        showBtnWrapper.classList.add('active');
+                        showBtn.innerHTML = "Przeczytaj więcej";
+                        termsAdd.classList.add('active');
+                        termsAdd.parentElement.style.cssText += 'grid-area: 12/1/22/10;';
+                        footer.parentElement.style.cssText += 'grid-area: 22/1/24/10;';
+                    }
+                }
+            </script>
+        </div>
+        <div class="element-wrapper" style="grid-area:12 / 1 / 15 / 10;z-index:1">
+            <div class="poland-orange-terms terms-additional">
+                <p>Wypełnienie tego formularza oznacza akceptacje <a href="/poland-orange/terms" class="poland-orange-link" target="_blank">Regulaminu Usługi</a></p>
+
+                <p>Opłata zostanie doliczona do Twojego konta u operatora (telefon na abonament) lub odjęta z salda konta (telefon na kartę).</p>
+
+                <p>Kontakt: info-pl@mobileinfo.biz/support@century-mobile.com, numer telefonu: 800 00 7173 (opłata miejscowa) od poniedziałku do piątku w godzinach 09:00 - 17:00.</p>
+
+                <p>Naciśnij przycisk, aby zapisać się do usługi. W przypadku, gdy korzystanie z Serwisu wiąże się z koniecznością pobrania danych za pomocą transmisji GSM, opłaty te będą pobierane przez Operatora zgodnie z aktualnym cennikiem Operatora, z którym zawarł umowę.</p>
+
+                <p>Aby anulować, wyślij "STOP CENTURY” na numer 80708 (0 zł).</p>
+
+                <p>Usługodawcą i podmiotem świadczącym usługę dodatkową jest: Next Move Digital pod adresem 2 Cresswell Gardens, F-3, London SW5 0BJ, Wielka Brytania. Zarejestrowana zgodnie z prawem Wielkiej Brytanii, pod numerem GB 443 4108 21</p>
+            </div>
+        </div>
+
+        <div class="element-wrapper" style="grid-area:15 / 1 / 17 / 10;z-index:1">
+            <div class="poland-orange-footer">
+                <div class="footer-menu">
+                    <a href="/poland-orange/faq">FAQ</a>
+                    <a href="/poland-orange/contact_us">Kontakt</a>
+                    <a href="/poland-orange/terms">Zasady i warunki</a>
+                </div>
+                <div class="copyright austria-copyright">
+                    Next Move Digital 2023 Wszystkie prawa zastrzeżone
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
