@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js" lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Poland TMobile Landing</title>
+    <link rel="apple-touch-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen,print">
+
+</head>
+<body class="dark-landing">
+<main>
+    <style>
+        .landing-page-basic .element-wrapper {
+            z-index: 1;
+        }
+
+        .landing-page-basic .background-element-wrapper {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            z-index: 0;
+        }
+    </style>
+    <div class="landing-page-container "
+         style="display: grid;
+             grid-template-columns: repeat(9, 11.11111111vw);
+             grid-template-rows: repeat(16, 6.25vh);
+             background-color: #000;
+             color: #ffffff">
+        <div class="element-wrapper" style="grid-area:1 / 1 / 12 / 10;z-index:0">
+            <div class="background bottom poland-tmobile-success" ></div>
+        </div>
+        <div class="element-wrapper" style="grid-area:1 / 1 / 2 / 10;z-index:1">
+            <div class="century-logo logo-bigger"><img src="/img/century-logo-white.webp" alt="Century Logo"></div>
+        </div>
+        <div class="element-wrapper" style="grid-area:12 / 1 / 14 / 10;z-index:1">
+            <div class="poland-orange poland-tmobile-title">
+                <span>Transakcja przebiegła pomyślnie.</span>
+                <span>Dziękujemy za skorzystanie z usługi Century</span>
+            </div>
+        </div>
+        <div class="element-wrapper" style="grid-area:14 / 1 / 15 / 10;z-index:1">
+            <div class="poland-orange poland-tmobile-subtitle">
+                <span>Za chwile zostaniesz przekierowany do serwisu.
+</span>
+                <span>Jeśli to nie nastąpi w ciągu kilku minut, kliknij Dalej.</span>
+            </div>
+        </div>
+        <div class="element-wrapper" style="grid-area:15 / 1 / 17 / 10 ;z-index:1">
+            <div class="poland-orange-button-wrapper">
+                <form action="https://pwintegrations.github.io/poland-tmobile/otp.html" method="get">
+                    <button
+                            type="submit"
+                            id="main-subscribe-button"
+                            class="main-subscribe-button"
+                    >
+                        Dalej
+                    </button>
+                    <a
+                            href="century-mobile.com/austria_payment"
+                            class="DCBProtection"
+                            style="display: none"
+                    ></a>
+                </form>
+            </div>
+        </div>
+
+        <div class="element-wrapper" style="grid-area:17/1/19/10;z-index:1">
+            <div class="poland-orange-footer">
+                <div class="footer-menu">
+                    <a href="/poland-orange/faq">FAQ</a>
+                    <a href="/poland-orange/contact_us">Kontakt</a>
+                    <a href="/poland-orange/terms">Zasady i warunki</a>
+                </div>
+                <div class="copyright austria-copyright">
+                    Next Move Digital 2023 Wszystkie prawa zastrzeżone
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

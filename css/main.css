@@ -696,6 +696,41 @@ input[type=checkbox]{
     text-align: left;
 }
 
+.background.poland-tmobile-success{
+    background-image: url("/../img/success-poland-tmobile-bg.webp");
+}
+
+.poland-tmobile-title{
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.poland-tmobile-title span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 23px;
+}
+.poland-tmobile-subtitle{
+    color: #CACACA;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+}
+.poland-tmobile-subtitle span{
+    display: block;
+    line-height: 18px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
 
 
 
