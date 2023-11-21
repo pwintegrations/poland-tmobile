@@ -603,12 +603,12 @@ input[type=checkbox]{
     line-height: 16px;
 }
 
-.poland-tmobile-easy-link{
+.poland-tmoblie-easy-link{
     text-decoration: underline;
-    color: #D7D6D6
+    color: #D7D6D6;
 }
 
-.poland-tmobile-easy-link:hover, .poland-tmobile-easy-link:focus, .poland-tmobile-easy-link:active {
+.poland-tmoblie-easy-link:hover, .poland-tmoblie-easy-link:focus, .poland-tmoblie-easy-link:active {
     text-decoration: none;
     color: #D7D6D6;
 }
@@ -664,14 +664,11 @@ input[type=checkbox]{
     font-weight: 700;
 }
 
-
-
 .poland-tmobile-button-wrapper input{
     background-color: #F8F7FF;
     border-radius: 7px;
     line-height: 41px;
 }
-
 
 .poland-tmobile-button-wrapper .input-holder {
     margin-bottom: 17px;
