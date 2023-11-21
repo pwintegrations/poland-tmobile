@@ -87,9 +87,9 @@ button span {
 }
 
 .century-logo {
-    display: block;
+    display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 .century-logo img {
@@ -102,9 +102,18 @@ button span {
 .terms-text {
     color: #7E7E7E;
     font-size: 12px;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     padding-left: 11.1111111vw;
     padding-right: 11.1111111vw;
+}
+
+.background.poland-tmobile-banner{
+    background-image: url("../img/poland-tmobile-banner.webp");
+}
+
+
+.century-logo.logo-bigger img{
+    max-width: 120px;
 }
 
 footer {

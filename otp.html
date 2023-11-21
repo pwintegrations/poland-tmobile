@@ -37,7 +37,10 @@
              background-color: #000;
              color: #ffffff">
         <div class="element-wrapper" style="grid-area:1 / 1 / 8 / 10;z-index:0">
-            <div class="background bottom poland-orange-banner" ></div>
+            <div class="background bottom poland-tmobile-banner" ></div>
+        </div>
+        <div class="element-wrapper" style="grid-area:1 / 1 / 2 / 10;z-index:1">
+            <div class="century-logo logo-bigger"><img src="/img/century-logo-white.webp" alt="Century Logo"></div>
         </div>
         <div class="element-wrapper" style="grid-area:8 / 1 / 9 / 10;z-index:1">
             <div class="poland-orange additional-text">
@@ -49,7 +52,7 @@
                 <div class="poland-orange-button-wrapper form-group phone-prefix">
                     <div class="attention-text">Wprowadź swój numer telefonu:</div>
                     <div class="input-holder">
-                        <input data-inputmask = " 'mask' : '999 999 999'" type="tel" class="form-control phone-input" id="mobile-number-input" value="" placeholder="" name="mobile_number" />
+                        <input data-inputmask = " 'mask' : '999 9999 999'" type="tel" class="form-control phone-input" id="mobile-number-input" value="" placeholder="XXX XXXX XXX" name="mobile_number" />
 
                     </div>
                 </div>
@@ -139,15 +142,15 @@
 
         document.addEventListener('keyup', function (e) {
             const text = e.target.value.replace(/\D/g, "").trim();
-            const parts = [text.substr(0, 3), text.substr(3, 3), text.substr(6, 3)];
+            const parts = [text.substr(0, 3), text.substr(3, 4), text.substr(7, 3)];
             e.target.value = parts.join(' ').trim();
 
             phoneInput.classList.remove('not-validated');
             phoneInput.classList.remove('validated');
             sendPhoneBtn.classList.remove('disabled');
 
-            sendPhoneBtn.disabled = phoneInput.value.replace(/[ _]/g, '').length !== 9
-            if (phoneInput.value.replace(/[ _]/g, '').length !== 9){
+            sendPhoneBtn.disabled = phoneInput.value.replace(/[ _]/g, '').length !== 10
+            if (phoneInput.value.replace(/[ _]/g, '').length !== 10){
                 sendPhoneBtn.classList.add('disabled');
                 sendPhoneBtn.disabled = true
                 phoneInput.classList.add('not-validated');
@@ -160,7 +163,7 @@
         });
 
         sendPhoneBtn.addEventListener('click', function(e){
-            if (phoneInput.value.replace(/[ _]/g, '').length < 9 ) {
+            if (phoneInput.value.replace(/[ _]/g, '').length < 10 ) {
                 e.preventDefault();
                 phoneInput.parentElement.classList.remove('validated');
                 phoneInput.parentElement.classList.add('not-validated');
