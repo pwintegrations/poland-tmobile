@@ -713,6 +713,7 @@ input[type=checkbox]{
     width: 100%;
     text-align: center;
     line-height: 23px;
+    text-transform: uppercase;
 }
 .poland-tmobile-subtitle{
     color: #CACACA;
