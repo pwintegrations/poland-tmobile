@@ -603,4 +603,27 @@ input[type=checkbox]{
     line-height: 16px;
 }
 
+.poland-tmobile-easy-link{
+    text-decoration: underline;
+    color: #D7D6D6
+}
+
+.poland-tmobile-easy-link:hover, .poland-tmobile-easy-link:focus, .poland-tmobile-easy-link:active {
+    text-decoration: none;
+    color: #D7D6D6;
+}
+
+.poland-tmobile-link{
+    color: #55A632;
+    text-decoration: none;
+}
+.poland-tmobile-link:hover, .poland-tmobile-link:focus, .poland-tmobile-link:active{
+    color: #55A632;
+    text-decoration: underline;
+}
+
+
+
+
+
 
