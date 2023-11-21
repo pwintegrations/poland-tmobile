@@ -623,6 +623,80 @@ input[type=checkbox]{
 }
 
 
+.poland-tmobile-button-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.poland-tmobile-button-wrapper button{
+    font-size: 25px;
+    font-family: 'Bahnschrift', sans-serif;
+    border-radius: 0;
+    webkit-border-radius: 0;
+    line-height: 62px!important;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: rgb(94,181,50);
+    background: -moz-linear-gradient(194deg, rgba(94,181,50,1) 0%, rgba(50,112,49,1) 100%);
+    background: -webkit-linear-gradient(194deg, rgba(94,181,50,1) 0%, rgba(50,112,49,1) 100%);
+    background: linear-gradient(194deg, rgba(94,181,50,1) 0%, rgba(50,112,49,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5eb532",endColorstr="#327031",GradientType=1);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.poland-tmobile-button-wrapper button span {
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+    font-family: 'Bahnschrift', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+.poland-tmobile-button-wrapper .send-phone-button{
+    line-height: 52px!important;
+    border-radius: 4px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+
+
+.poland-tmobile-button-wrapper input{
+    background-color: #F8F7FF;
+    border-radius: 7px;
+    line-height: 41px;
+}
+
+
+.poland-tmobile-button-wrapper .input-holder {
+    margin-bottom: 17px;
+    margin-top: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #4E4A4A;
+}
+.poland-tmobile-button-wrapper .input-holder::before, .poland-tmobile-button-wrapper .input-holder::after {
+    display: none;
+}
+.poland-tmobile-button-wrapper .input::placeholder{
+    color: #818181;
+}
+
+.poland-tmobile-button-wrapper .attention-text{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+
 
 
 
