@@ -89,13 +89,13 @@
 
                     if (showBtnWrapper.classList.contains('active')) {
                         showBtnWrapper.classList.remove('active');
-                        showBtn.innerHTML = "Przeczytaj mniej";
+                        showBtn.innerHTML = "Przeczytaj więcej";
                         termsAdd.classList.remove('active');
                         termsAdd.parentElement.style.cssText += 'grid-area: 14 / 1 / 15 / 10;';
                         footer.parentElement.style.cssText += 'grid-area: 15 / 1 / 17 / 10;';
                     } else {
                         showBtnWrapper.classList.add('active');
-                        showBtn.innerHTML = "Przeczytaj więcej";
+                        showBtn.innerHTML = "Przeczytaj mniej";
                         termsAdd.classList.add('active');
                         termsAdd.parentElement.style.cssText += 'grid-area: 14/1/22/10;';
                         footer.parentElement.style.cssText += 'grid-area: 22/1/24/10;';
