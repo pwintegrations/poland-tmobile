@@ -73,6 +73,28 @@
         <div class="element-wrapper" style="grid-area:11 / 1 / 12 / 10;z-index:1">
             <a onclick="termsFunction()" class="poland-orange show-more-link active"><i></i><span id="showBtnText">Przeczytaj mniej</span><i></i></a>
 
+            <script type="text/javascript">
+                function termsFunction () {
+                    const showBtn = document.querySelector("#showBtnText");
+                    const showBtnWrapper = document.querySelector(".show-more-link");
+                    const termsAdd = document.querySelector('.terms-additional');
+                    const footer = document.querySelector('.poland-orange-footer');
+
+                    if (showBtnWrapper.classList.contains('active')) {
+                        showBtnWrapper.classList.remove('active');
+                        showBtn.innerHTML = "Przeczytaj więcej";
+                        termsAdd.classList.remove('active');
+                        termsAdd.parentElement.style.cssText += 'grid-area: 12 / 1 / 15 / 10;';
+                        footer.parentElement.style.cssText += 'grid-area: 15/1/17/10;';
+                    } else {
+                        showBtnWrapper.classList.add('active');
+                        showBtn.innerHTML = "Przeczytaj mniej";
+                        termsAdd.classList.add('active');
+                        termsAdd.parentElement.style.cssText += 'grid-area: 12/1/23/10;';
+                        footer.parentElement.style.cssText += 'grid-area: 23/1/24/10;';
+                    }
+                }
+            </script>
         </div>
         <div class="element-wrapper" style="grid-area:12/1/23/10;z-index:1">
             <div class="poland-orange-terms terms-additional active">
