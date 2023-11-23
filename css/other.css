@@ -669,6 +669,34 @@ button.player-popup i {
     outline: none;
 }
 
+.terms p{
+    margin-bottom: 24px;
+    margin-top: 0;
+    line-height: 19px;
+    padding-bottom: 0;
+}
+.terms p.no-bottom-padding{
+    margin-bottom: 0
+}
+
+.terms .pseudo-paragraph {
+    margin-bottom: 24px;
+    padding-bottom: 0;
+    line-height: 19px;
+    display: block;
+    width: 100%;
+    margin-top: 0;
+}
+.terms .pseudo-paragraph.no-bottom-padding{
+    margin-bottom: 0
+}
+
+.terms a{
+    text-decoration: underline;
+    color: #e1b573;
+}
+
+
 @media screen and (min-width: 768px) {
     .button-to-top {
         width: 58px;
