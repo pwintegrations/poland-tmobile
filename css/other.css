@@ -679,7 +679,7 @@ button.player-popup i {
     margin-bottom: 0
 }
 
-.terms .pseudo-paragraph {
+span.pseudo-paragraph {
     margin-bottom: 24px;
     padding-bottom: 0;
     line-height: 19px;
@@ -687,7 +687,7 @@ button.player-popup i {
     width: 100%;
     margin-top: 0;
 }
-.terms .pseudo-paragraph.no-bottom-padding{
+.pseudo-paragraph.no-bottom-padding{
     margin-bottom: 0
 }
 
